@@ -72,7 +72,7 @@ describe("Backend API Tests for Employee and Admin Role", () => {
     });
   });
 
-  it("should approve the employee’s resignation as admin", function () {
+  it("should approve the employee's resignation as admin", function () {
     const token = Cypress.env("adminAuthToken"); // Retrieve admin token from Cypress environment variable
     cy.request({
       method: "PUT",
